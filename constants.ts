@@ -24,7 +24,12 @@ export const MODULES: Module[] = [
             <li><strong>Policentrismo:</strong> Se reconoce que el "buen español" tiene múltiples centros.</li>
             <li><strong>Unidad en la diversidad:</strong> El objetivo es mantener una norma común que permita la comunicación fluida entre todos los hispanohablantes.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '1-1-e1',
+          title: 'Práctica sobre Norma Panhispánica',
+          consigna: 'Basándote en lo aprendido, reescribe las siguientes 10 oraciones para que reflejen correctamente los principios de la norma panhispánica. Si una oración ya es correcta, indícalo. 1. La RAE impone las reglas del español de España al resto del mundo. 2. Solo hay un centro de habla "correcta" del español, que está en Madrid. 3. Las variantes del español de América son consideradas inferiores. 4. El voseo es un vulgarismo que se debe evitar. 5. La norma panhispánica ignora la evolución del idioma en los medios digitales. 6. Las academias de la lengua no colaboran entre sí. 7. El objetivo de la norma es que todos hablemos exactamente igual. 8. Un término usado en México no puede ser parte de la norma culta. 9. La diversidad del español es un problema para la unidad del idioma. 10. La norma panhispánica es un concepto estático que no cambia.'
+        }
       },
       {
         id: '1-2',
@@ -39,7 +44,12 @@ export const MODULES: Module[] = [
             <li>Estudiar la evolución de la lengua e incorporar nuevos términos o usos.</li>
             <li>Promover una norma común que cohesione a la comunidad hispanohablante.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '1-2-e1',
+          title: 'Ejercicio sobre RAE y ASALE',
+          consigna: 'Completa o corrige las siguientes 10 frases sobre las funciones de la RAE y la ASALE. 1. La ASALE es una institución más antigua que la RAE. 2. La RAE ___________ las obras de referencia como el Diccionario. 3. El servicio "RAEInforma" sirve para comprar libros. 4. La principal función de las academias es __________ nuevas palabras. 5. Las 23 academias trabajan de forma totalmente independiente. 6. La RAE no tiene en cuenta el español hablado en América. 7. El Diccionario de la lengua española es creado únicamente por la RAE. 8. La ASALE promueve normas ___________ para todo el mundo hispanohablante. 9. Las academias se oponen a la incorporación de neologismos. 10. La Gramática y la Ortografía son obras que no se actualizan.'
+        }
       },
       {
         id: '1-3',
@@ -73,7 +83,12 @@ export const MODULES: Module[] = [
             correctAnswerIndex: 2,
             explanation: "El voseo es un perfecto ejemplo de policentrismo. Es la norma para millones de hablantes cultos y es plenamente aceptado por la norma panhispánica."
           }
-        ]
+        ],
+        exercise: {
+          id: '1-3-e1',
+          title: 'Práctica sobre Policentrismo',
+          consigna: 'Analiza las siguientes 10 situaciones y explica en una frase si son un ejemplo de policentrismo aceptado por la norma panhispánica y por qué. 1. Usar "vos" en lugar de "tú" en Argentina. 2. Pronunciar "z" como "s" (seseo) en Colombia. 3. Usar la palabra "computadora" en México y "ordenador" en España. 4. Decir "carro" en Venezuela y "coche" en España. 5. Escribir "sicología" en lugar de "psicología". 6. El uso de "che" en el español rioplatense. 7. La aspiración de la "s" final en el Caribe. 8. Usar "platicar" por "charlar" en México. 9. El uso del pronombre "ustedes" para la segunda persona del plural en Canarias. 10. La existencia de diferentes acentos en distintas regiones de España.'
+        }
       },
       {
         id: '1-4',
@@ -81,7 +96,12 @@ export const MODULES: Module[] = [
         content: `
           <p class="mb-4">La lengua es un organismo vivo que cambia constantemente. Las academias no "imponen" reglas de forma arbitraria, sino que observan, analizan y registran los cambios que los propios hablantes consolidan con el uso.</p>
           <p class="mb-4">La incorporación de neologismos (palabras nuevas) y la adaptación de extranjerismos son ejemplos de esta evolución. Un término como <strong>"tuitear"</strong>, impensable hace unas décadas, hoy está recogido en el diccionario.</p>
-        `
+        `,
+        exercise: {
+          id: '1-4-e1',
+          title: 'Práctica sobre Evolución Lingüística',
+          consigna: 'Para cada uno de los siguientes 10 términos, indica si es un neologismo o un extranjerismo y escribe una oración coherente usándolo. 1. Tuitear. 2. Selfi. 3. Spoiler. 4. Viralizar. 5. Podcast. 6. Cliquear. 7. Bloguero. 8. Wasapear. 9. Emoticono. 10. Link.'
+        }
       },
       {
         id: '1-5',
@@ -108,7 +128,12 @@ export const MODULES: Module[] = [
             <li><strong>Aplica lo aprendido:</strong> Intenta usar las reglas y recomendaciones en tu escritura diaria.</li>
             <li><strong>No temas equivocarte:</strong> El error es parte del aprendizaje. La retroalimentación de la IA te ayudará a mejorar.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '1-6-e1',
+          title: 'Ejercicio de Autoevaluación',
+          consigna: 'Reflexiona sobre tu propio proceso de aprendizaje del español. Responde a las siguientes 10 preguntas en una o dos frases cada одна. 1. ¿Cuál es tu mayor fortaleza en el uso del español? 2. ¿Qué aspecto de la gramática te resulta más difícil? 3. ¿Qué tipo de error ortográfico cometes con más frecuencia? 4. ¿Cómo aplicas lo que aprendes en tu vida diaria? 5. ¿Qué lección de este módulo te ha parecido más útil hasta ahora? 6. ¿Utilizas alguna herramienta de consulta como el DLE? 7. ¿Cuál es tu objetivo al usar esta guía? 8. ¿Te sientes más seguro/a al escribir en español ahora? 9. ¿Qué tema te gustaría profundizar más? 10. Describe un hábito que podrías adoptar para mejorar tu español.'
+        }
       }
     ]
   },
@@ -131,7 +156,12 @@ export const MODULES: Module[] = [
             <li><strong>Formación del plural:</strong> Palabras terminadas en vocal tónica (<em>menú > menús</em>), en consonante (<em>álbum > álbumes</em>) o invariables (<em>la crisis > las crisis</em>).</li>
             <li><strong>Femeninos de profesiones:</strong> Se recomienda el uso de formas como <em>la jueza</em>, <em>la médica</em>, <em>la ingeniera</em>.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '2-1-e1',
+          title: 'Práctica de Género y Número',
+          consigna: 'Escribe el plural de las siguientes 5 palabras y el femenino de las siguientes 5 profesiones. 1. Régimen. 2. Carácter. 3. Espécimen. 4. Menú. 5. Club. 6. El poeta. 7. El alcalde. 8. El juez. 9. El concejal. 10. El médico.'
+        }
       },
       {
         id: '2-2',
@@ -161,7 +191,12 @@ export const MODULES: Module[] = [
             correctAnswerIndex: 1,
             explanation: "'A los clientes' es el complemento indirecto (¿A quiénes enviaré un correo?), por lo que se debe usar 'les'."
           }
-        ]
+        ],
+        exercise: {
+          id: '2-2-e1',
+          title: 'Práctica de Leísmo, Laísmo y Loísmo',
+          consigna: 'Sustituye el complemento por el pronombre adecuado (lo, la, le, los, las, les) en las siguientes 10 oraciones. 1. Compré un libro para mi padre. 2. Vi a tus hermanas en el cine. 3. Dieron el premio a los ganadores. 4. He visto el coche nuevo. 5. Escribí una carta a la directora. 6. Acompañé a mi amigo al médico. (Admite leísmo de persona). 7. Entregaron las llaves a los inquilinos. 8. Recogí a los niños del colegio. 9. La policía detuvo a los ladrones. 10. Puse la falda en el armario.'
+        }
       },
       {
         id: '2-3',
@@ -179,7 +214,7 @@ export const MODULES: Module[] = [
         exercise: {
             id: '2-3-e1',
             title: 'Ejercicio de Concordancia',
-            consigna: "Corrige los errores de concordancia en las siguientes oraciones: 1. La gente, en el fondo, son buenas. 2. El calor y la humedad ambiental era insoportable. 3. El grupo de turistas llegaron cansados al hotel."
+            consigna: "Corrige los errores de concordancia en las siguientes oraciones: 1. La gente, en el fondo, son buenas. 2. El calor y la humedad ambiental era insoportable. 3. El grupo de turistas llegaron cansados al hotel. 4. Hubieron muchas personas que protestaron. 5. La mayoría de los diputados votó en contra. 6. Se alquila apartamentos en la costa. 7. Entra y sale muchos trenes de la estación. 8. Tanto el padre como el hijo era muy alto. 9. Me gusta el cine y el teatro clásico. 10. El clave de la cuestión son los detalles."
         }
       },
       {
@@ -211,7 +246,12 @@ export const MODULES: Module[] = [
             correctAnswerIndex: 1,
             explanation: "Incluso en subjuntivo, 'haber' como impersonal se mantiene en singular. Lo correcto es 'haya problemas'."
           }
-        ]
+        ],
+        exercise: {
+          id: '2-4-e1',
+          title: 'Práctica del Verbo Haber',
+          consigna: 'Elige la forma correcta del verbo "haber" para cada una de las siguientes 10 oraciones. 1. (Hubo/Hubieron) muchos problemas. 2. Mañana (habrá/habrán) dos reuniones. 3. No creo que (haya/hayan) suficientes sillas. 4. Siempre (ha habido/han habido) personas así. 5. Si (hubiera/hubieran) sabido, no venían. 6. En mi clase (hay/somos) veinte alumnos. (¡Cuidado con esta!). 7. El año pasado (hubo/hubieron) varias tormentas. 8. Es posible que (haya/hayan) cambios. 9. ¿(Había/Habían) muchas nubes ayer?. 10. Ojalá no (haya/hayan) más incidentes.'
+        }
       },
       {
         id: '2-5',
@@ -247,7 +287,12 @@ export const MODULES: Module[] = [
             correctAnswerIndex: 0,
             explanation: "El verbo 'acordarse' rige la preposición 'de' ('acordarse DE algo'). Omitirla es un caso de queísmo. Lo correcto es 'Me acuerdo de que llovía mucho'."
           }
-        ]
+        ],
+        exercise: {
+          id: '2-5-e1',
+          title: 'Práctica de Queísmo y Dequeísmo',
+          consigna: 'Corrige las siguientes 10 oraciones eliminando los casos de queísmo o dequeísmo. Si una oración es correcta, indícalo. 1. Pienso de que deberíamos irnos. 2. Me alegro que te guste. 3. Estoy seguro que lo lograrás. 4. Le informé de que no había plazas. 5. Me di cuenta que era tarde. 6. No cabe duda de que es un gran artista. 7. Insistió de que le pagaran. 8. Me acuerdo que llovía. 9. Le aconsejo que estudie más. 10. Es hora que te vayas.'
+        }
       },
       {
         id: '2-6',
@@ -261,7 +306,12 @@ export const MODULES: Module[] = [
             <li><strong>contra / cuanto:</strong> <em><strong>Cuanto</strong> más estudies, mejor</em> (correcto), no <em>contra más estudies</em>.</li>
             <li><strong>cerca de / cerca a:</strong> Se prefiere <em><strong>cerca de</strong></em> en el español general.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '2-6-e1',
+          title: 'Práctica de Preposiciones y Adverbios',
+          consigna: 'Elige la opción correcta para cada una de las siguientes 10 oraciones. 1. Siéntate (en/a) la mesa. 2. Lo haré (de acuerdo a/de acuerdo con) tus instrucciones. 3. (Bajo/Desde) mi punto de vista, estás equivocado. 4. (Contra/Cuanto) más lo pienso, menos lo entiendo. 5. Vivo cerca (a/de) la playa. 6. El jarrón está hecho (a/de) cristal. 7. Discrepo (con/de) tu opinión. 8. Salí (en/de) dirección al norte. 9. La cocina (a/de) gas es más rápida. 10. Tengo afición (por/a) la lectura.'
+        }
       }
     ]
   },
@@ -306,7 +356,12 @@ export const MODULES: Module[] = [
                     correctAnswerIndex: 0,
                     explanation: "'Camión' es una palabra aguda terminada en -n. Las agudas que terminan en -n, -s o vocal siempre llevan tilde."
                 }
-            ]
+            ],
+            exercise: {
+              id: '3-1-e1',
+              title: 'Práctica de Acentuación',
+              consigna: 'Coloca la tilde en las siguientes 10 palabras que la necesiten y justifica por qué (aguda, grave, esdrújula). 1. arbol. 2. cancion. 3. helicoptero. 4. caracter. 5. cafe. 6. util. 7. examenes. 8. marmol. 9. comite. 10. dieciseis.'
+            }
         },
         {
             id: '3-2',
@@ -338,7 +393,12 @@ export const MODULES: Module[] = [
                     correctAnswerIndex: 2,
                     explanation: "'Sé' del verbo saber; 'se' pronombre reflexivo; 'sé' del verbo saber. La frase correcta es: 'No sé por qué se enfadó tanto, si sé que no le dije nada'."
                 }
-            ]
+            ],
+            exercise: {
+              id: '3-2-e1',
+              title: 'Práctica de Tilde Diacrítica',
+              consigna: 'Completa las siguientes 10 oraciones con la opción correcta (con o sin tilde diacrítica). 1. No (se/sé) que hacer. 2. (El/Él) es mi mejor amigo. 3. ¿Quieres (mas/más) café? 4. (Tu/Tú) tienes la culpa. 5. Iré (si/sí) me invitas. 6. Me lo dio para (mi/mí). 7. Quiero un té (de/dé) menta. 8. Lo intentó, (mas/más) no pudo. 9. (Si/Sí), estoy de acuerdo. 10. Este es (el/él) libro (de/dé) Juan.'
+            }
         },
         {
             id: '3-3',
@@ -352,7 +412,12 @@ export const MODULES: Module[] = [
                 <li>Después de dos puntos (:) se escribe con minúscula, salvo que se inicie una cita textual.</li>
                 <li>Las mayúsculas <strong>siempre</strong> llevan tilde si les corresponde: <em>ÁFRICA</em>.</li>
               </ul>
-            `
+            `,
+            exercise: {
+              id: '3-3-e1',
+              title: 'Práctica de Mayúsculas y Minúsculas',
+              consigna: 'Reescribe las siguientes 10 frases corrigiendo los errores en el uso de mayúsculas y minúsculas. 1. El próximo Miércoles tengo cita con el Dentista. 2. La Reina Letizia es muy elegante. 3. El Río Ebro pasa por Zaragoza. 4. En Invierno nieva mucho en los Pirineos. 5. Estudié Historia del Arte en la universidad. 6. El Papa vive en la Ciudad del Vaticano. 7. Me encanta la comida Japonesa. 8. ¿Hablas Inglés? 9. El Océano Pacífico es el más grande. 10. El Presidente del Gobierno dio una rueda de Prensa.'
+            }
         },
         {
             id: '3-4',
@@ -387,7 +452,12 @@ export const MODULES: Module[] = [
                 <li><strong>Dos puntos (:):</strong> Anuncian una enumeración, una cita textual o una conclusión. <em>Como dijo Descartes: "Pienso, luego existo".</em></li>
                 <li><strong>Puntos suspensivos (...):</strong> Indican una interrupción, una duda o un final abierto. Son siempre tres y solo tres.</li>
               </ul>
-            `
+            `,
+            exercise: {
+              id: '3-5-e1',
+              title: 'Práctica de Puntuación Avanzada',
+              consigna: 'Añade los signos de puntuación que faltan (punto y coma, dos puntos, puntos suspensivos) en las siguientes 10 oraciones. 1. Eran demasiados los invitados no cabíamos en el salón. 2. Como decía el refrán A quien madruga, Dios le ayuda. 3. Compró de todo para la fiesta refrescos, patatas, aceitunas y dulces. 4. No sé si ir, si quedarme, si llamarte 5. El niño lloraba la madre lo consolaba. 6. Queridos abuelos Les escribo para contarles mis aventuras. 7. El discurso fue brillante sin embargo, nadie aplaudió. 8. Lo miró fijamente y entonces le dijo la verdad. 9. Puedes hacer lo que quieras ir al cine, quedarte en casa, salir con amigos 10. Quizás, si hubiera estudiado más '
+            }
         },
         {
             id: '3-6',
@@ -400,7 +470,12 @@ export const MODULES: Module[] = [
                 <li><strong>Siglas:</strong> Se forman con las iniciales de varias palabras. Se escriben sin puntos y en mayúscula (<em>ONU, FMI</em>). No forman plural gráfico (*<s>las ONGs</s> -> <em>las ONG</em>).</li>
                 <li><strong>Símbolos:</strong> Son representaciones de conceptos científicos o técnicos. Se escriben sin punto y no tienen plural (<em>kg, m, €</em>). Se separan con un espacio del número al que acompañan: <em>100 m, 50 kg</em>.</li>
               </ul>
-            `
+            `,
+            exercise: {
+              id: '3-6-e1',
+              title: 'Práctica de Abreviaturas y Siglas',
+              consigna: 'Corrige o completa las siguientes 10 frases prestando atención al uso de abreviaturas, siglas y símbolos. 1. La ONGs ayudan a mucha gente. 2. La sede de la O.N.U. está en Nueva York. 3. El precio es de 50€. (Corrige el espaciado). 4. Vivo en la c/ Alcalá. (Escribe la forma completa y la abreviatura). 5. La película dura 120 min. (Corrige el punto). 6. Consulte la pag. 25. (Escribe la abreviatura del plural: páginas). 7. Etc... (Corrige la puntuación). 8. El paquete pesa 5 Kgs. (Corrige el símbolo y el plural). 9. El Dr Pérez es un gran profesional. (Añade el punto). 10. La R.A.E. publica el diccionario.'
+            }
         }
     ]
   },
@@ -445,7 +520,12 @@ export const MODULES: Module[] = [
                 correctAnswerIndex: 2,
                 explanation: "La RAE recomienda el uso de las comillas angulares o latinas (« ») como primera opción, reservando las inglesas y las simples para entrecomillar dentro de un texto ya entrecomillado."
             }
-        ]
+        ],
+        exercise: {
+          id: '4-1-e1',
+          title: 'Práctica de Ortotipografía',
+          consigna: 'Indica qué recurso tipográfico (cursiva, negrita o comillas) usarías en cada uno de los siguientes 10 casos. 1. Para el título de un libro. 2. Para una palabra extranjera no adaptada como "marketing". 3. Para resaltar una palabra clave en un título. 4. Para una cita textual corta. 5. Para el título de un artículo de periódico. 6. Para indicar que una palabra se usa con ironía. 7. Para el nombre de una película. 8. Para el apodo de una persona. 9. Para una palabra que se está definiendo. 10. Para los nombres de barcos.'
+        }
       },
       {
         id: '4-2',
@@ -458,7 +538,12 @@ export const MODULES: Module[] = [
             <li>Los signos de puntuación se escriben <strong>pegados</strong> a la palabra que les precede y separados por un espacio de la que les sigue.</li>
             <li>Los párrafos deben separarse con una línea en blanco o con sangría en la primera línea (pero no ambas cosas a la vez).</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '4-2-e1',
+          title: 'Práctica de Espaciado',
+          consigna: 'Reescribe las siguientes 10 frases corrigiendo los errores de espaciado. 1. Fui al cine.Y me gustó mucho. 2. ¿ Qué quieres ?. 3. Compré pan ,leche y huevos. 4. Dijo : "Volveré pronto". 5. Me encanta el libro( sobre todo el final). 6. ¡ Qué sorpresa ! 7. Es un gran profesional ;además,es muy amable. 8. El resultado es 10 000. (Revisa si es correcto). 9. El 25 % de los alumnos aprobó. (Revisa si es correcto). 10. Me lo contó todo ...y se fue.'
+        }
       },
       {
         id: '4-3',
@@ -487,7 +572,12 @@ export const MODULES: Module[] = [
                 correctAnswerIndex: 1,
                 explanation: "El símbolo de porcentaje (%) se escribe separado por un espacio del número al que acompaña, ya que no es un sufijo sino un símbolo que representa 'por ciento'."
             }
-        ]
+        ],
+        exercise: {
+          id: '4-3-e1',
+          title: 'Práctica con Números y Símbolos',
+          consigna: 'Escribe correctamente las siguientes 10 expresiones que involucran números, cifras y símbolos. 1. El premio fue de 25.000 euros. 2. Tengo treinta y cinco años. (Escríbelo con cifra). 3. La temperatura es de 30ºC. (Corrige el espaciado). 4. La 2ª Guerra Mundial. (Usa números romanos). 5. Es el capítulo nueve. (Escríbelo con cifra). 6. El 50% de la población. (Corrige el espaciado). 7. El número premiado fue el 1.000. (Corrige el separador de millar). 8. Compré tres bolígrafos. (Escríbelo con cifra si lo consideras apropiado). 9. Son las 8 de la tarde. (Escríbelo con cifra). 10. Mi código postal es 28014. (Añade separador de millar si es necesario).'
+        }
       },
       {
         id: '4-4',
@@ -501,7 +591,12 @@ export const MODULES: Module[] = [
             <li>Si los elementos de la lista son frases cortas o palabras, pueden empezar con minúscula y terminar con coma (o punto y coma), excepto el último que termina con punto.</li>
             <li>Si son oraciones completas, cada elemento empieza con mayúscula y termina con punto.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '4-4-e1',
+          title: 'Práctica de Títulos y Listas',
+          consigna: 'Puntúa correctamente el final de los siguientes 5 títulos y de los 5 elementos de la siguiente lista. TÍTULOS: 1. El invierno en Lisboa 2. Capítulo I 3. La importancia de la puntuación 4. Instrucciones de uso 5. Introducción. LISTA: Necesito comprar: 6. pan 7. leche 8. huevos 9. aceite 10. y fruta'
+        }
       },
       {
         id: '4-5',
@@ -529,7 +624,12 @@ export const MODULES: Module[] = [
           <h4 class="text-xl font-bold mt-6 mb-2 text-indigo-700">Estructura Básica (Estilo Humanístico):</h4>
           <p>Apellido, Nombre del autor, <em>Título de la obra en cursiva</em>, Lugar de publicación, Editorial, Año.</p>
           <p class="bg-slate-100 p-3 rounded-lg mt-2">Ejemplo: <br>García Márquez, Gabriel, <em>Cien años de soledad</em>, Buenos Aires, Sudamericana, 1967.</p>
-        `
+        `,
+        exercise: {
+          id: '4-6-e1',
+          title: 'Práctica de Referencias',
+          consigna: 'Ordena los siguientes 10 elementos para formar una referencia bibliográfica correcta de un libro según el estilo humanístico (Apellido, Nombre, Título, Lugar, Editorial, Año). 1. Cien años de soledad (Título) 2. 1967 (Año) 3. García Márquez, Gabriel (Autor) 4. Sudamericana (Editorial) 5. Buenos Aires (Lugar). Ahora, haz lo mismo con los siguientes 5 elementos para una referencia de un artículo de revista: 6. "La nueva ortografía" (Título del artículo) 7. 2010 (Año) 8. Gutiérrez Ordóñez, Salvador (Autor) 9. pp. 15-25 (Páginas) 10. Revista de Filología Española, vol. 90 (Nombre de la revista y volumen).'
+        }
       }
     ]
   },
@@ -549,7 +649,12 @@ export const MODULES: Module[] = [
               <p>El español tiene 5 sonidos vocálicos puros y estables: /a/, /e/, /i/, /o/, /u/. Es crucial pronunciarlas siempre de la misma forma, sin diptongar ni relajar su sonido, a diferencia del inglés.</p>
               <h4 class="text-xl font-bold mt-6 mb-2 text-indigo-700">Las Consonantes:</h4>
               <p>Algunas consonantes como la 'r' (simple y vibrante), la 'j' o la 'ñ' requieren práctica específica para hablantes no nativos.</p>
-            `
+            `,
+            exercise: {
+              id: '5-1-e1',
+              title: 'Ejercicio sobre Fonética',
+              consigna: 'Describe brevemente cómo se articulan los siguientes 10 sonidos del español. 1. La vocal /a/. 2. La vocal /i/. 3. La consonante /p/. 4. La consonante /m/. 5. La consonante /s/ (en seseo). 6. La consonante /l/. 7. La vibrante simple /ɾ/ (en "caro"). 8. La vibrante múltiple /r/ (en "carro"). 9. El fonema /x/ de "gente" o "jamón". 10. El fonema /ɲ/ de "ñu".'
+            }
         },
         {
             id: '5-2',
@@ -572,7 +677,12 @@ export const MODULES: Module[] = [
                     correctAnswerIndex: 1,
                     explanation: "El seseo es el fenómeno mayoritario en el mundo hispanohablante y consiste en pronunciar el sonido que representan las letras 'c' (ante e, i) y 'z' con el mismo fonema /s/ de la letra 's'."
                 }
-            ]
+            ],
+            exercise: {
+              id: '5-2-e1',
+              title: 'Práctica sobre Seseo',
+              consigna: 'Indica para cada una de las siguientes 10 palabras si sonarían igual o diferente para un hablante seseante. 1. Casa / Caza. 2. Sien / Cien. 3. Sumo / Zumo. 4. Coser / Cocer. 5. Tasa / Taza. 6. Beso / Bezo. 7. Sera / Cera. 8. Cima / Sima. 9. Casar / Cazar. 10. Saco / Zaco.'
+            }
         },
         {
             id: '5-3',
@@ -581,7 +691,12 @@ export const MODULES: Module[] = [
               <p class="mb-4">El yeísmo es la pronunciación idéntica de la 'll' (elle) y la 'y' (ye). Es el fenómeno general en la mayor parte del mundo hispanohablante.</p>
               <p class="mb-4">Para un hablante yeísta, las palabras <em>calló</em> y <em>cayó</em> suenan exactamente igual. La distinción entre ambos sonidos (/ʎ/ para 'll' y /ʝ/ para 'y') se mantiene solo en algunas zonas de España y América del Sur.</p>
               <p class="mt-4">Al igual que el seseo, el <strong>yeísmo</strong> está plenamente aceptado en la norma culta.</p>
-            `
+            `,
+            exercise: {
+              id: '5-3-e1',
+              title: 'Práctica sobre Yeísmo',
+              consigna: 'Indica para cada uno de los siguientes 10 pares de palabras si sonarían igual o diferente para un hablante yeísta. 1. Calló / Cayó. 2. Hulla / Huya. 3. Rallar / Rayar. 4. Valla / Vaya. 5. Pollo / Poyo. 6. Sayo / Sallo. 7. Malla / Maya. 8. Pulla / Puya. 9. Callado / Cayado. 10. Halla / Haya.'
+            }
         },
         {
             id: '5-4',
@@ -617,7 +732,12 @@ export const MODULES: Module[] = [
                     correctAnswerIndex: 1,
                     explanation: "El término correcto es 'croqueta'. 'Cocreta' es una metátesis (cambio de lugar de sonidos) muy extendida pero incorrecta."
                 }
-            ]
+            ],
+            exercise: {
+              id: '5-4-e1',
+              title: 'Práctica de Vicios de Dicción',
+              consigna: 'Escribe la forma correcta de las siguientes 10 palabras o expresiones, que contienen errores comunes de pronunciación. 1. Dijistes. 2. Cocreta. 3. Aereopuerto. 4. Vinistes. 5. Monstruo (a menudo se dice *mounstro*). 6. Dentífrico (a menudo se dice *dentrifico*). 7. Preveer. 8. Calculista (a menudo se dice *calculisto*). 9. Hubieron problemas. 10. Idos (forma imperativa de irse, a menudo se dice *iros*).'
+            }
         },
         {
             id: '5-5',
@@ -631,7 +751,12 @@ export const MODULES: Module[] = [
                 <li><strong>Exclamativa:</strong> La entonación es más enfática y puede ascender o descender bruscamente. <em>¡Qué día tan bueno!</em></li>
               </ul>
               <p class="mt-4">Una entonación incorrecta puede llevar a malentendidos, haciendo que una afirmación suene a pregunta o viceversa.</p>
-            `
+            `,
+            exercise: {
+              id: '5-5-e1',
+              title: 'Práctica sobre Entonación',
+              consigna: 'Escribe los signos de puntuación (¿?, ¡!, .) que correspondan al final de cada frase para darle el sentido que se indica entre paréntesis. Luego, describe en una frase si la curva melódica final sería ascendente, descendente o enfática. 1. Ha llegado el paquete (Afirmación). 2. Cuándo llega el paquete (Pregunta). 3. Ha llegado el paquete (Sorpresa). 4. Te gusta el chocolate (Pregunta). 5. Me encanta el chocolate (Énfasis). 6. El tren sale a las cinco (Afirmación). 7. A qué hora sale el tren (Pregunta). 8. No me lo puedo creer (Exclamación). 9. El cielo está nublado (Afirmación). 10. Va a llover (Pregunta con duda).'
+            }
         },
         {
             id: '5-6',
@@ -639,7 +764,12 @@ export const MODULES: Module[] = [
             content: `
               <p class="mb-4">El ritmo del español está marcado por las sílabas. A diferencia del inglés, donde el ritmo se basa en los acentos tónicos, en español todas las sílabas tienen una duración similar (isocronía silábica). Esto le da su cadencia característica.</p>
               <p class="mb-4">Las <strong>pausas</strong> son tan importantes como los sonidos. Corresponden a los signos de puntuación en la escritura y nos permiten respirar, organizar las ideas y dar énfasis al discurso. Hablar demasiado rápido y sin pausas dificulta enormemente la comprensión.</p>
-            `
+            `,
+            exercise: {
+              id: '5-6-e1',
+              title: 'Práctica de Ritmo y Pausas',
+              consigna: 'Lee el siguiente texto y reescríbelo añadiendo comas y puntos donde consideres que un hablante haría una pausa para dar sentido y ritmo al discurso. Tienes que añadir exactamente 10 signos de puntuación. "Hablar bien no es solo pronunciar correctamente las palabras también es darles el ritmo adecuado y hacer las pausas necesarias un discurso sin pausas es agotador para quien escucha y resta claridad al mensaje por eso la puntuación en la escritura es el reflejo del ritmo en el habla un buen orador sabe cuándo callar."'
+            }
         }
     ]
   },
@@ -662,7 +792,12 @@ export const MODULES: Module[] = [
             <li><strong>Usa mayúsculas correctamente:</strong> Escribir todo en mayúsculas equivale a gritar.</li>
             <li><strong>Revisa antes de enviar:</strong> Un breve repaso puede evitar muchos errores y malentendidos.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '6-1-e1',
+          title: 'Práctica de Escritura Digital',
+          consigna: 'Corrige los siguientes 10 enunciados para que sigan los principios básicos de la escritura digital formal (puntuación, mayúsculas, etc.). 1. HOLA, NECESITO AYUDA. 2. te envio el archivo que me pediste. 3. cuando puedas me respondes. 4. gracias x tu ayuda. 5. nos vemos mañana ok. 6. que vas a hacer esta tarde. 7. ya he llegado¡. 8. ÁFRICA ES UN CONTINENTE. (Revisa si es correcta). 9. por que no viniste ayer. 10. me parece k es una buena idea.'
+        }
        },
        {
         id: '6-2',
@@ -701,7 +836,7 @@ export const MODULES: Module[] = [
         exercise: {
             id: '6-3-e1',
             title: 'Ejercicio de Corrección Digital',
-            consigna: "Corrige el siguiente fragmento de un mensaje de texto, prestando especial atención a la acentuación, puntuación y el uso de mayúsculas y minúsculas, según las normas de la RAE para la escritura digital: 'hola, como estas? mañana iremos al cine si o si. no te lo pierdas!'"
+            consigna: "Corrige el siguiente fragmento de un mensaje de texto, prestando especial atención a la acentuación, puntuación y el uso de mayúsculas y minúsculas, según las normas de la RAE para la escritura digital: 'hola, como estas? mañana iremos al cine si o si. no te lo pierdas! que pelicula quieres ver. avisame. te espero. chao'"
         }
        },
        {
@@ -714,7 +849,12 @@ export const MODULES: Module[] = [
             <li><strong>Abreviaturas:</strong> Usar abreviaturas comúnmente aceptadas (<code class="bg-slate-200 px-1 rounded">p. ej.</code>, <code class="bg-slate-200 px-1 rounded">etc.</code>). Evitar las que son crípticas y dificultan la lectura (como 'xq', 'tqm').</li>
             <li><strong>Etiquetas (Hashtags):</strong> Las palabras que componen una etiqueta se escriben juntas y sin tildes. Para facilitar la lectura, se pueden usar mayúsculas intermedias (CamelCase): <code class="bg-slate-200 px-1 rounded">#DiaInternacionalDelLibro</code>.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '6-4-e1',
+          title: 'Práctica de Redes Sociales',
+          consigna: 'Adapta las siguientes 10 ideas a un formato adecuado para una publicación en X (antes Twitter), usando abreviaturas aceptadas y hashtags cuando sea apropiado. 1. Quería informar de que el evento ha sido un éxito rotundo. 2. El Día Internacional del Libro se celebra el 23 de abril. 3. Nuestra empresa lanza un nuevo producto revolucionario. 4. Por ejemplo, podríamos usar este tipo de formato. 5. Estoy totalmente de acuerdo con la opinión del autor. 6. La Real Academia Española ha aceptado una nueva palabra. 7. Buscamos un director o directora para el departamento de marketing. 8. Estados Unidos celebrará elecciones el próximo noviembre. 9. etcétera, etcétera, etcétera. 10. Adjunto el programa completo de la conferencia.'
+        }
        },
        {
         id: '6-5',
@@ -727,7 +867,12 @@ export const MODULES: Module[] = [
             <li>No deben sustituir palabras en contextos donde la claridad es importante: *Estaré allí a las 🕔* es impreciso. Mejor: <em>Estaré allí a las 5 🕔</em>.</li>
             <li>Su uso debe adecuarse al contexto y al interlocutor. En comunicaciones formales, es mejor evitarlos.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '6-5-e1',
+          title: 'Práctica sobre Emojis',
+          consigna: 'Reescribe las siguientes 10 frases colocando el emoji de forma correcta según las recomendaciones de la RAE y el contexto (formal/informal). 1. He terminado el informe.🥳 2. Le ruego me envíe la factura. 🙏 3. Vamos al cine.🍿 ¿Te apuntas?. 4. Tráeme un ☕ cuando puedas. 5. Me voy a la 🛌. 6. La reunión será a las 🕙. 7. Felicitaciones por su ascenso. 👍 8. Qué buena noticia. Me alegro mucho 😊. 9. He suspendido el examen 😭. 10. Nos vemos en la playa. 🏖️'
+        }
        },
        {
         id: '6-6',
@@ -756,7 +901,12 @@ export const MODULES: Module[] = [
                 correctAnswerIndex: 1,
                 explanation: "Cuando un extranjerismo no está adaptado (extranjerismo crudo), debe escribirse en cursiva. Usar la alternativa en español ('reunión') también es una excelente opción recomendada."
             }
-        ]
+        ],
+        exercise: {
+          id: '6-6-e1',
+          title: 'Práctica de Neologismos y Extranjerismos',
+          consigna: 'Para los siguientes 10 términos, indica una alternativa en español o, si es un extranjerismo no adaptado, escribe una frase usándolo correctamente en cursiva. 1. E-mail. 2. Link. 3. Password. 4. Online. 5. Backup. 6. CEO. 7. Hashtag. 8. Smartphone. 9. Influencer. 10. Feedback.'
+        }
        }
     ]
   },
@@ -789,7 +939,12 @@ export const MODULES: Module[] = [
             correctAnswerIndex: 1,
             explanation: "'coloq.' es la marca de uso que indica que un término o acepción pertenece al registro coloquial o informal."
           }
-        ]
+        ],
+        exercise: {
+          id: '7-1-e1',
+          title: 'Práctica de Consulta del DLE',
+          consigna: 'Imagina que buscas estas 10 palabras en el DLE. ¿Qué marca gramatical (sustantivo, adjetivo, verbo...) o de uso (coloquial, culto, etc.) crees que encontrarías junto a su definición principal? 1. Bonito. 2. Correr. 3. Casa. 4. Rápidamente. 5. ¡Ojalá! 6. Tío (con el sentido de \'amigo\'). 7. Desde. 8. Pero. 9. Resiliencia. 10. Chulo (con el sentido de \'bonito\' en España).'
+        }
       },
       {
         id: '7-2',
@@ -799,7 +954,12 @@ export const MODULES: Module[] = [
           <p class="mb-4">El DPD aborda cuestiones de todo tipo: concordancia, conjugación de verbos, uso de preposiciones, dudas ortográficas, etc. Sus artículos suelen ser más extensos y explicativos que los del DLE.</p>
           <h4 class="text-xl font-bold mt-6 mb-2 text-indigo-700">¿Cuándo usar el DPD?</h4>
           <p>Cuando tu duda no es '¿qué significa X?' sino '¿cómo se dice/usa X correctamente?'. Por ejemplo, para saber si se dice 'preveer' o 'prever', el DPD es la mejor fuente.</p>
-        `
+        `,
+        exercise: {
+          id: '7-2-e1',
+          title: 'Práctica con el DPD',
+          consigna: 'Para las siguientes 10 dudas lingüísticas, indica qué par de palabras o expresión clave buscarías en el DPD para resolverlas. 1. ¿Se dice "vaso de agua" o "vaso con agua"? 2. ¿Es "imprimido" o "impreso"? 3. ¿"Detrás mío" o "detrás de mí"? 4. ¿"Preveer" o "prever"? 5. ¿"La calor" o "el calor"? 6. ¿"Adecuar" se conjuga como "averiguar" o como "licuar"? 7. ¿Se debe usar "de que" en "pienso de que está mal"? 8. ¿El plural de "currículum" es "currículums" o "currícula"? 9. ¿Se dice "la presidenta" o "la presidente"? 10. ¿Es "en base a" o "con base en"?'
+        }
       },
       {
         id: '7-3',
@@ -811,7 +971,12 @@ export const MODULES: Module[] = [
             <li><strong>Diccionario del estudiante:</strong> Una versión del DLE más sencilla y orientada a aprendices.</li>
             <li><strong>Glosario de términos gramaticales:</strong> Define con precisión más de 2000 conceptos de la gramática.</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '7-3-e1',
+          title: 'Práctica de Diccionarios Especializados',
+          consigna: 'Indica en qué diccionario de la RAE (DLE, Diccionario de americanismos, Glosario de términos gramaticales) buscarías principalmente para resolver las siguientes 10 dudas. 1. El significado de la palabra "chévere". 2. La definición de "sintagma nominal". 3. El significado de "casa". 4. Saber qué significa "platicar" en México. 5. Entender qué es una "oración subordinada". 6. Averiguar si "parquear" es un uso aceptado. 7. La definición de "fonema". 8. El origen de la palabra "chocolate". 9. Saber qué es "el voseo". 10. El significado de la palabra "guagua" en Canarias.'
+        }
       },
       {
         id: '7-4',
@@ -824,7 +989,12 @@ export const MODULES: Module[] = [
             <li><strong>Con base en / en base a:</strong> La forma correcta y preferida es <em>con base en</em>.</li>
             <li><strong>Doble negación:</strong> En español es correcta. <em>No he visto a nadie</em> (es correcto, no *No he visto a alguien*).</li>
           </ul>
-        `
+        `,
+        exercise: {
+          id: '7-4-e1',
+          title: 'Práctica de Dudas Frecuentes (A-G)',
+          consigna: 'Elige la opción correcta para cada una de las siguientes 10 oraciones. 1. Voy (a ver/haber) qué pasa. 2. (Ahí/Hay/Ay), me he hecho daño. 3. La decisión se tomó (en base a/con base en) los datos. 4. No he visto (a nadie/a alguien). 5. El problema es (de que/que) no hay tiempo. 6. Me (alegro de que/alegro que) hayas venido. 7. (Contra/Cuanto) más lo miro, más me gusta. 8. (Debajo de/Debajo) la mesa. 9. No (caben/caven) más personas. 10. Es una persona muy (gentil/gentil).'
+        }
       },
       {
         id: '7-5',
@@ -853,7 +1023,12 @@ export const MODULES: Module[] = [
                 correctAnswerIndex: 1,
                 explanation: "Cuando 'medio' funciona como adverbio (modificando a un adjetivo, como 'cansada'), es invariable y no concuerda en género. Lo correcto es 'medio cansada'."
             }
-        ]
+        ],
+        exercise: {
+          id: '7-5-e1',
+          title: 'Práctica de Dudas Frecuentes (H-P)',
+          consigna: 'Elige la opción correcta para cada una de las siguientes 10 oraciones. 1. Cuando (halla/haya) una solución, avísame. 2. He (imprimido/impreso) el documento. 3. La encontré (media/medio) triste. 4. No sé el (porqué/por qué/porque) de su reacción. 5. ¿(Porqué/Por qué/Porque) no has venido? 6. No fui (porqué/por qué/porque) estaba enfermo. 7. Es un asunto que (incumbe a/incumbe) todos. 8. El veneno (hizo/hico) efecto. 9. La policía (intervino/intervino) en la pelea. 10. Se (prevee/prevé) lluvia para mañana.'
+        }
       },
       {
         id: '7-6',
@@ -881,7 +1056,12 @@ export const MODULES: Module[] = [
                 correctAnswerIndex: 1,
                 explanation: "'Sobretodo' es un sustantivo que se refiere a una prenda de vestir, un abrigo largo. 'Sobre todo' (en dos palabras) significa 'especialmente'."
             }
-        ]
+        ],
+        exercise: {
+          id: '7-6-e1',
+          title: 'Práctica de Dudas Frecuentes (Q-Z)',
+          consigna: 'Elige la opción correcta para cada una de las siguientes 10 oraciones. 1. No quiero té, (sino/si no) café. 2. (Sino/Si no) estudias, suspenderás. 3. Ponte el (sobretodo/sobre todo), que hace frío. 4. Me gustan todas las frutas, (sobretodo/sobre todo) las fresas. 5. Saltó la (valla/vaya/baya). 6. Espero que le (valla/vaya/baya) bien. 7. El color (rojo/rojo) es mi favorito. 8. Se me ha (roto/rompido) el vaso. 9. El agua (sabe/save) a cloro. 10. (Zarpar/Sarpar) es iniciar la navegación.'
+        }
       }
     ]
   }
