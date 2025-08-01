@@ -4,6 +4,7 @@ import type { UserProgress } from '../types';
 
 interface AuthUser {
   username: string;
+  allowedModules?: number[];
 }
 
 interface AuthContextType {

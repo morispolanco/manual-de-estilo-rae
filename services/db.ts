@@ -4,8 +4,13 @@
 
 import type { UserProgress } from '../types';
 
+interface UserData {
+    password_plaintext: string;
+    allowedModules?: number[]; // Optional. If undefined, all modules are allowed.
+}
+
 interface Database {
-    users: Record<string, string>; // username: password
+    users: Record<string, UserData>; // username: UserData
     progress: Record<string, UserProgress>;
 }
 
@@ -34,10 +39,30 @@ const saveDB = (db: Database) => {
 
 const initializeDB = () => {
     const db = getDB();
-    if (!db.users.admin) {
-        console.log("Initializing DB with default admin user...");
-        db.users.admin = 'admin123'; // In a real app, this would be a securely hashed password.
-        db.progress.admin = {};
+    let dbUpdated = false;
+
+    // Admin user setup (handles old string format for migration)
+    if (!db.users.admin || typeof db.users.admin !== 'object') {
+        console.log("Initializing/updating DB with default admin user...");
+        db.users.admin = { password_plaintext: 'admin123' };
+        if (!db.progress.admin) {
+            db.progress.admin = {};
+        }
+        dbUpdated = true;
+    }
+
+    // Demo user setup
+    if (!db.users.demo) {
+        console.log("Initializing DB with demo user...");
+        db.users.demo = {
+            password_plaintext: 'demo123',
+            allowedModules: [1, 3]
+        };
+        db.progress.demo = {};
+        dbUpdated = true;
+    }
+
+    if (dbUpdated) {
         saveDB(db);
     }
 };
@@ -47,10 +72,11 @@ initializeDB();
 
 
 export const db = {
-    async login(username: string, password_attempt: string): Promise<{ username: string } | null> {
+    async login(username: string, password_attempt: string): Promise<{ username: string; allowedModules?: number[] } | null> {
         const { users } = getDB();
-        if (users[username] && users[username] === password_attempt) {
-            return { username };
+        const userData = users[username];
+        if (userData && userData.password_plaintext === password_attempt) {
+            return { username, allowedModules: userData.allowedModules };
         }
         return null;
     },
@@ -61,7 +87,7 @@ export const db = {
         if (db.users[username]) {
             return false; // User already exists
         }
-        db.users[username] = password_plaintext;
+        db.users[username] = { password_plaintext }; // New users have no restrictions
         db.progress[username] = {};
         saveDB(db);
         return true;

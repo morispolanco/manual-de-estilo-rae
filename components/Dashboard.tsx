@@ -1,27 +1,39 @@
 
 import React from 'react';
 import type { Module, UserProgress } from '../types';
+import { LockClosedIcon } from './icons/LockClosedIcon';
 
 interface DashboardProps {
   modules: Module[];
   onSelectModule: (id: number) => void;
   userProgress: UserProgress;
+  allowedModules?: number[];
 }
 
-const ModuleCard: React.FC<{ module: Module; onClick: () => void; progress: number }> = ({ module, onClick, progress }) => (
+const ModuleCard: React.FC<{ module: Module; onClick: () => void; progress: number, isLocked: boolean }> = ({ module, onClick, progress, isLocked }) => (
   <div
     onClick={onClick}
-    className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer overflow-hidden transform hover:-translate-y-1 group"
+    className={`bg-white rounded-xl shadow-lg overflow-hidden transform ${
+        isLocked 
+        ? 'cursor-not-allowed opacity-70' 
+        : 'hover:shadow-xl transition-all duration-300 cursor-pointer hover:-translate-y-1 group'
+    }`}
+    aria-disabled={isLocked}
   >
     <div className="p-6">
       <div className="flex items-start gap-4">
-        <div className="bg-indigo-100 text-indigo-600 rounded-lg p-3">
+        <div className={`rounded-lg p-3 ${isLocked ? 'bg-slate-100 text-slate-400' : 'bg-indigo-100 text-indigo-600'}`}>
           <module.icon className="w-8 h-8" />
         </div>
         <div className="flex-1">
-          <h3 className="text-lg font-bold text-slate-800 group-hover:text-indigo-700 transition-colors">{module.title}</h3>
+          <h3 className={`text-lg font-bold ${isLocked ? 'text-slate-500' : 'text-slate-800 group-hover:text-indigo-700 transition-colors'}`}>{module.title}</h3>
           <p className="text-sm text-slate-500 mt-1">{module.description}</p>
         </div>
+        {isLocked && (
+            <div className="flex-shrink-0" title="Módulo bloqueado">
+                <LockClosedIcon className="w-5 h-5 text-slate-400" aria-hidden="true" />
+            </div>
+        )}
       </div>
     </div>
     <div className="bg-slate-50 px-6 py-3">
@@ -33,7 +45,7 @@ const ModuleCard: React.FC<{ module: Module; onClick: () => void; progress: numb
   </div>
 );
 
-const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, userProgress }) => {
+const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, userProgress, allowedModules }) => {
   const calculateModuleProgress = (moduleId: number) => {
     const moduleProg = userProgress[moduleId];
     if (!moduleProg) return 0;
@@ -60,6 +72,15 @@ const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, userProg
 
   const totalProgress = modules.reduce((sum, module) => sum + calculateModuleProgress(module.id), 0) / modules.length;
 
+  const isModuleLocked = (moduleId: number) => {
+    // If allowedModules is undefined, no restrictions apply, so nothing is locked.
+    if (allowedModules === undefined) {
+      return false;
+    }
+    // If restrictions exist, check if the module ID is in the allowed list.
+    return !allowedModules.includes(moduleId);
+  };
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8 p-6 bg-white rounded-xl shadow-md border border-slate-200">
@@ -75,14 +96,18 @@ const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, userProg
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modules.map(module => (
-          <ModuleCard
-            key={module.id}
-            module={module}
-            onClick={() => onSelectModule(module.id)}
-            progress={calculateModuleProgress(module.id)}
-          />
-        ))}
+        {modules.map(module => {
+          const isLocked = isModuleLocked(module.id);
+          return (
+             <ModuleCard
+                key={module.id}
+                module={module}
+                onClick={() => !isLocked && onSelectModule(module.id)}
+                progress={calculateModuleProgress(module.id)}
+                isLocked={isLocked}
+            />
+          );
+        })}
       </div>
     </div>
   );

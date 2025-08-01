@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from 'react';
+
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import LoginPage from './components/LoginPage';
 import Header from './components/Header';
@@ -14,6 +15,18 @@ function AuthenticatedApp() {
     const [view, setView] = useState<AppView>('dashboard');
     const [selectedModuleId, setSelectedModuleId] = useState<number | null>(null);
     const { user, progress, updateProgress } = useAuth();
+    
+    const selectedModule = MODULES.find(m => m.id === selectedModuleId);
+    
+    // This effect handles cases where a user might be viewing a module
+    // that becomes inaccessible (not really possible in current setup, but good practice).
+    useEffect(() => {
+        if(view === 'module' && selectedModuleId !== null && !selectedModule) {
+            setView('dashboard');
+            setSelectedModuleId(null);
+        }
+    }, [view, selectedModuleId, selectedModule]);
+
 
     const handleSelectModule = useCallback((id: number) => {
         setSelectedModuleId(id);
@@ -25,8 +38,6 @@ function AuthenticatedApp() {
         setView('dashboard');
     }, []);
     
-    const selectedModule = MODULES.find(m => m.id === selectedModuleId);
-
     const mainContent = () => {
         if (user?.username === 'admin' && view === 'admin') {
             return <AdminPage />;
@@ -47,6 +58,7 @@ function AuthenticatedApp() {
                 modules={MODULES}
                 onSelectModule={handleSelectModule}
                 userProgress={progress}
+                allowedModules={user?.allowedModules}
             />
         );
     };
