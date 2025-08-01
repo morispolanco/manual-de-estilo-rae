@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ onHomeClick, onAdminClick }) => {
                         <BookOpenIcon className="w-8 h-8 text-indigo-600" />
                         <div>
                             <h1 className="text-xl font-bold">Dominio Panhispánico</h1>
-                            <p className="text-xs text-slate-500 -mt-1">Tu Guía RAE de Estilo</p>
+                            <p className="text-xs text-slate-500 -mt-1">Tu guía RAE de estilo</p>
                         </div>
                     </button>
                     <div className="flex items-center gap-4">

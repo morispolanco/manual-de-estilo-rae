@@ -24,8 +24,8 @@ export const getCorrectionFeedback = async (consigna: string, userInput: string)
         4.  **Ofrece una versión final:** Al final de tu análisis, presenta el texto completo del usuario, pero ya corregido.
         5.  **Tono:** Mantén un tono formal, alentador y pedagógico, como un tutor de español. No seas demasiado severo.
         6.  **Formato:** Estructura tu respuesta usando Markdown para mayor claridad. Usa encabezados, listas con viñetas y texto en negrita para resaltar los puntos clave.
-        7. **Encabezado principal:** Usa '### Análisis y Corrección' como el encabezado principal de tu respuesta.
-        8. **Encabezado final:** Usa '### Texto Corregido' para la versión final corregida.
+        7. **Encabezado principal:** Usa '### Análisis y corrección' como el encabezado principal de tu respuesta.
+        8. **Encabezado final:** Usa '### Texto corregido' para la versión final corregida.
     `;
 
     try {

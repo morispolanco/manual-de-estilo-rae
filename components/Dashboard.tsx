@@ -87,7 +87,7 @@ const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, userProg
         <h2 className="text-2xl font-bold text-slate-800">Bienvenido a Dominio Panhispánico</h2>
         <p className="text-slate-600 mt-2">Selecciona un módulo para comenzar tu viaje de aprendizaje y perfeccionar tu dominio del español.</p>
         <div className="mt-4">
-            <h4 className="text-sm font-semibold text-slate-700">Progreso General</h4>
+            <h4 className="text-sm font-semibold text-slate-700">Progreso general</h4>
             <div className="w-full bg-slate-200 rounded-full h-4 mt-2">
                 <div className="bg-green-500 h-4 rounded-full flex items-center justify-end text-white text-xs pr-2" style={{ width: `${totalProgress}%` }}>
                     {Math.round(totalProgress)}%

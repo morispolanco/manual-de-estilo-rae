@@ -92,12 +92,12 @@ const ModuleView: React.FC<ModuleViewProps> = ({ module, onBack, userProgress, u
               <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row gap-4">
                 {lesson.quiz && (
                   <button onClick={() => handleStartQuiz(lesson)} className="w-full sm:w-auto flex-1 px-4 py-2 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition">
-                    Realizar Cuestionario {userProgress[module.id]?.[lesson.id]?.quizCompleted && '✓'}
+                    Realizar cuestionario {userProgress[module.id]?.[lesson.id]?.quizCompleted && '✓'}
                   </button>
                 )}
                 {lesson.exercise && (
                   <button onClick={() => handleStartExercise(lesson)} className="w-full sm:w-auto flex-1 px-4 py-2 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transition">
-                    Práctica de Escritura {userProgress[module.id]?.[lesson.id]?.exerciseCompleted && '✓'}
+                    Práctica de escritura {userProgress[module.id]?.[lesson.id]?.exerciseCompleted && '✓'}
                   </button>
                 )}
               </div>

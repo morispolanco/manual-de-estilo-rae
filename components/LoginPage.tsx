@@ -66,7 +66,7 @@ const LoginPage: React.FC = () => {
                                 disabled={loading}
                                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:bg-indigo-400 disabled:cursor-not-allowed"
                             >
-                                {loading ? 'Iniciando sesión...' : 'Iniciar Sesión'}
+                                {loading ? 'Iniciando sesión...' : 'Iniciar sesión'}
                             </button>
                         </div>
                     </form>

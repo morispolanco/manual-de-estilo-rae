@@ -42,7 +42,7 @@ const EditUserModal: React.FC<{
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-30 p-4">
             <div className="bg-white rounded-xl shadow-2xl w-full max-w-lg">
                 <div className="p-6 border-b">
-                    <h3 className="text-xl font-bold text-slate-800">Editar Usuario: <span className="text-indigo-600">{user.username}</span></h3>
+                    <h3 className="text-xl font-bold text-slate-800">Editar usuario: <span className="text-indigo-600">{user.username}</span></h3>
                 </div>
                 <div className="p-6 space-y-6">
                     <div>
@@ -56,7 +56,7 @@ const EditUserModal: React.FC<{
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-slate-700 mb-2">Módulos Permitidos</label>
+                        <label className="block text-sm font-medium text-slate-700 mb-2">Módulos permitidos</label>
                         <div className="flex gap-4 mb-3 border-b pb-3">
                             <button onClick={() => handleSelectAll(true)} className="text-xs font-medium text-indigo-600 hover:underline">Seleccionar todos</button>
                             <button onClick={() => handleSelectAll(false)} className="text-xs font-medium text-indigo-600 hover:underline">Deseleccionar todos</button>
@@ -78,7 +78,7 @@ const EditUserModal: React.FC<{
                 </div>
                 <div className="bg-slate-50 px-6 py-4 flex justify-end gap-3 rounded-b-xl">
                     <button onClick={onClose} className="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg hover:bg-slate-300 transition">Cancelar</button>
-                    <button onClick={handleSaveChanges} className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Guardar Cambios</button>
+                    <button onClick={handleSaveChanges} className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Guardar cambios</button>
                 </div>
             </div>
         </div>
@@ -135,13 +135,13 @@ const AdminPage: React.FC = () => {
     return (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
-                <h2 className="text-3xl font-bold text-slate-800">Panel de Administración</h2>
+                <h2 className="text-3xl font-bold text-slate-800">Panel de administración</h2>
                 <p className="mt-2 text-slate-600">Gestiona los usuarios de la plataforma.</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
                     {/* Add User Form */}
                     <div className="border rounded-lg p-6 self-start">
-                        <h3 className="text-xl font-semibold text-slate-700 mb-4">Añadir Nuevo Usuario</h3>
+                        <h3 className="text-xl font-semibold text-slate-700 mb-4">Añadir nuevo usuario</h3>
                         <form onSubmit={handleAddUser} className="space-y-4">
                              <div>
                                 <label htmlFor="new-username" className="block text-sm font-medium text-slate-700">Nombre de usuario</label>
@@ -152,7 +152,7 @@ const AdminPage: React.FC = () => {
                                 <input id="new-password" type="password" value={newPassword} onChange={e => setNewPassword(e.target.value)} className="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
                             </div>
                             <button type="submit" className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                Crear Usuario
+                                Crear usuario
                             </button>
                             {message && <p className={`text-sm mt-2 ${message.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>{message.text}</p>}
                         </form>
@@ -160,7 +160,7 @@ const AdminPage: React.FC = () => {
 
                     {/* User List */}
                     <div className="border rounded-lg p-6">
-                        <h3 className="text-xl font-semibold text-slate-700 mb-4">Lista de Usuarios</h3>
+                        <h3 className="text-xl font-semibold text-slate-700 mb-4">Lista de usuarios</h3>
                         <div className="max-h-96 overflow-y-auto">
                             <ul className="divide-y divide-slate-200">
                                 {users.map(user => (

@@ -38,7 +38,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, onComplete }) => {
     const score = userAnswers.filter((answer, index) => answer === questions[index].correctAnswerIndex).length;
     return (
       <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
-        <h3 className="text-2xl font-bold text-center text-indigo-700">Resultados del Cuestionario</h3>
+        <h3 className="text-2xl font-bold text-center text-indigo-700">Resultados del cuestionario</h3>
         <p className="text-center text-slate-600 mt-2">
           Has acertado {score} de {questions.length} preguntas.
         </p>
