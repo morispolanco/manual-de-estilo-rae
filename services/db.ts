@@ -49,7 +49,7 @@ const initializeDB = () => {
     // Admin user setup (handles old string format for migration)
     if (!db.users.admin || typeof db.users.admin !== 'object') {
         console.log("Initializing/updating DB with default admin user...");
-        db.users.admin = { password_plaintext: 'admin123' };
+        db.users.admin = { password_plaintext: 'Mita' };
         if (!db.progress.admin) {
             db.progress.admin = {};
         }
