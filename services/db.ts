@@ -4,9 +4,14 @@
 
 import type { UserProgress } from '../types';
 
-interface UserData {
+export interface UserData {
     password_plaintext: string;
     allowedModules?: number[]; // Optional. If undefined, all modules are allowed.
+}
+
+export interface UserDetails {
+    username: string;
+    allowedModules?: number[];
 }
 
 interface Database {
@@ -87,15 +92,52 @@ export const db = {
         if (db.users[username]) {
             return false; // User already exists
         }
-        db.users[username] = { password_plaintext }; // New users have no restrictions
+        db.users[username] = { password_plaintext }; // New users have access to all modules by default
         db.progress[username] = {};
         saveDB(db);
         return true;
     },
     
-    async getUsers(): Promise<string[]> {
+    async getUsers(): Promise<UserDetails[]> {
         const { users } = getDB();
-        return Object.keys(users);
+        return Object.entries(users).map(([username, userData]) => ({
+            username,
+            allowedModules: userData.allowedModules
+        }));
+    },
+
+    async deleteUser(username: string): Promise<boolean> {
+        if (username === 'admin') {
+            console.warn("Attempt to delete admin user was blocked.");
+            return false;
+        }
+        const db = getDB();
+        if (db.users[username]) {
+            delete db.users[username];
+            delete db.progress[username];
+            saveDB(db);
+            return true;
+        }
+        return false;
+    },
+
+    async updateUser(username: string, data: Partial<UserData>): Promise<boolean> {
+        const db = getDB();
+        if (!db.users[username]) return false;
+
+        // Update password if a non-empty one is provided
+        if (data.password_plaintext && data.password_plaintext.trim()) {
+            db.users[username].password_plaintext = data.password_plaintext.trim();
+        }
+
+        // Update allowedModules if provided. `undefined` means all are allowed.
+        // We protect the admin user from having their permissions changed here.
+        if (username !== 'admin' && 'allowedModules' in data) {
+            db.users[username].allowedModules = data.allowedModules;
+        }
+
+        saveDB(db);
+        return true;
     },
 
     async getProgress(username: string): Promise<UserProgress> {
